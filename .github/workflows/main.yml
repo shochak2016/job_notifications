@@ -1,0 +1,9 @@
+name: scan-repo
+on:
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Run main
+        run: #python main.py
