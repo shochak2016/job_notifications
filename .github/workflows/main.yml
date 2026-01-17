@@ -1,9 +1,13 @@
 name: scan-repo
 on:
+  #schedule:
+   # -cron: "*/5 * * * *"
+
 
 jobs:
   build:
     runs-on: self-hosted
     steps:
-      - name: Run main
-        run: #python main.py
+      - name: Read changes to simplify repo
+        run: |
+          set -euo pipefail
