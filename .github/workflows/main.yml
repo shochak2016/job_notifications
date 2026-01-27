@@ -14,3 +14,6 @@ jobs:
       - name: Read changes to simplify repo
         run: |
           set -euo pipefail
+          curl -fsSL \ 
+        #  "https://github.com/SimplifyJobs/Summer2026-Internships/blob/dev/README.md#-data-science-ai--machine-learning-internship-roles" \
+        # -o temp.html
